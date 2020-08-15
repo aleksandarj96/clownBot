@@ -37,7 +37,7 @@ client.on('message', message => {
         client.commands.get('git').execute(message, args)
 
     }else if(command == 'randomclown'){
-
+git 
         client.commands.get('randomclown').execute(message, args)
         
     }
