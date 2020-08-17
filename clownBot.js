@@ -22,7 +22,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return; //if message start != ! and bot is author, do nothing. 
 
-    const args = message.content.slice(prefix.length).split(/ +/) //To be able to send several commands: !command command
+    const args = message.content.slice(prefix.length).split(/ +/) //To be able to send several commands or add arguments: !command argument
     const command = args.shift().toLowerCase()
 
     client.commands.get(command.toString()).execute(message, args)
